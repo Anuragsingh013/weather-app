@@ -1,7 +1,7 @@
 body{
-  /* background: #6c6cf5; */
-  background-image: url('./assets/weatherBg.jpg');
+  background-image:linear-gradient(to right , #5858f4 ,#4582f1) ;
+  /* background-image: url('./assets/weatherBg.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
 }
