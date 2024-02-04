@@ -29,7 +29,7 @@ const TopBar = () => {
         fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}&units=metric`)
             .then((res) => res.json())
             .then((data) => {
-                console.log(data.main);
+                
                 setTemperature(data.main.temp);
                 setHumidity(data.main.humidity);
                 setCityName(data.name);
