@@ -1,0 +1,7 @@
+body{
+  /* background: #6c6cf5; */
+  background-image: url('./assets/weatherBg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

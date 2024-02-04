@@ -1,0 +1,69 @@
+.weatherData {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* border: 2px solid green; */
+  width: 650px;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.leftWeatherPart {
+  /* border: 2px solid green; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 40px;
+  padding-top: 12px;
+  
+}
+.rightWeatherPart {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 6%;
+  /* border: 2px solid red; */
+  flex-basis: 60%;
+}
+.countryName {
+  font-size: 1.4rem;
+}
+.temp h1 {
+  font-size: 3.2rem;
+}
+
+.humidity,
+.windSpeed {
+  text-align: center;
+}
+
+.humidity img {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+}
+.windSpeed img {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+}
+.data {
+  font-weight: 400;
+}
+
+@media (max-width: 700px) {
+  .weatherData {
+    flex-direction: column;
+    width: 100%;
+  }
+  .righPart {
+    text-align: center;
+    padding-left: 60px;
+  }
+  .countryName {
+    font-size: 1.4rem;
+  }
+  .temp h1 {
+    font-size: 3rem;
+  }
+}

@@ -1,0 +1,16 @@
+.appContainer{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;*/ 
+    max-width: 700px;
+    max-height: 100%;
+    background: #ffffff34;
+    backdrop-filter: blur(20px);
+    padding: 24px;
+    border-radius: 32px;
+    text-align: center;
+    margin: auto;
+    margin-top: 4%;
+    flex-wrap: wrap;
+}

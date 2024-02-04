@@ -1,0 +1,120 @@
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid red; */
+  width: 650px;
+  gap: 14px;
+  padding-top: 60px;
+}
+.leftPart {
+  flex-basis: 30%;
+  width: 150px;
+  padding-right: 15px;
+  /* border: 2px solid blue; */
+}
+.leftPart img {
+  text-align: center;
+  margin: 0 auto;
+  width: 200px;
+}
+.rightPart {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid green; */
+}
+
+.rightPart input {
+  height: 78px;
+  width: 362px;
+  border-radius: 40px;
+  padding-left: 24px;
+  background: #ebfffc;
+  color: #626262;
+  font-size: 1.5rem;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  padding-left: 40px;
+  font-weight: 400;
+}
+.searchIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 78px;
+  height: 78px;
+  margin-left: 12px;
+  border-radius: 40px;
+  background: #ebfffc;
+  text-align: center;
+  /* border: 2px solid red; */
+}
+
+.searchIcon img {
+  width: 32px;
+  height: 32px;
+}
+
+@media (max-width: 700px) {
+  .topBar {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .leftPart {
+    flex-basis: 30%;
+    width: 150px;
+    /* border: 2px solid blue; */
+    order: 2;
+  }
+
+  .rightPart {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid green; */
+    order: 1;
+  }
+  .searchIcon {
+    width: 48px;
+    height: 48px;
+    padding: 4px;
+    margin-left: .6rem;
+    border-radius: 60px;
+   
+  }
+  .searchIcon img {
+    width: 24px;
+    height: 24px;
+  }
+  .rightPart input {
+    padding: 8px;
+    padding-left: 20px;
+    height: 44px;
+    font-size: 1.4rem;
+    border-radius: 40px;
+    font-size: 16px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    margin-left: 1.8rem;
+  }
+  .leftPart img {
+    text-align: center;
+    margin: auto;
+    width: 170px;
+    height: 170px;
+  }
+}
+@media (max-width: 350px) {
+  .searchIcon {
+    padding: 4px;
+    padding-left: 10px;
+    
+  }
+  
+}
