@@ -86,7 +86,7 @@ const TopBar = () => {
                     <img src={wicon} alt="Weather Icon" />
                 </div>
                 <div className="rightPart">
-                    <input type="text" placeholder='Search' onChange={handleChange} />
+                    <input type="text" placeholder='Search' onChange={handleChange}  spellcheck="false" />
                     <div className="searchIcon" onClick={handleSearchClick}>
                         <img src={search} alt="Search Icon" />
                     </div>
