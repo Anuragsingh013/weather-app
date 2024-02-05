@@ -23,7 +23,7 @@
   align-items: center;
   padding-top: 6%;
   /* border: 2px solid red; */
-  flex-basis: 60%;
+  flex-basis: 50%;
 }
 .countryName {
   font-size: 1.4rem;
