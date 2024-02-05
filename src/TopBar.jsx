@@ -12,6 +12,7 @@ import snow from './assets/images/snow.png'
 import './TopBar.css'
 
 const TopBar = () => {
+    const [searchedCityName,setSearchedCityName]=useState("ghaziabad")
     const [temperature, setTemperature] = useState("");
     const [cityName, setCityName] = useState("ghaziabad");
     const [windSpeed, setWindSpeed] = useState("");
@@ -21,12 +22,12 @@ const TopBar = () => {
 
     useEffect(() => {
         fetchData();
-    }, [cityName]);
+    }, [searchedCityName]);
 
     const API_KEY = 'a1860d3e4d5e4cda9a99bf205a710728';
 
     function fetchData() {
-        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}&units=metric`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchedCityName}&appid=${API_KEY}&units=metric`)
             .then((res) => res.json())
             .then((data) => {
                 console.log(data.main);
@@ -41,7 +42,7 @@ const TopBar = () => {
                 } else if (data.weather[0].icon === '03d' || data.weather[0].icon === '04n') {
                     setWicon(drizzle);
                 } else if (data.weather[0].icon === '04d' || data.weather[0].icon === '04n') {
-                    setWicon(humidity_icon);
+                    setWicon(drizzle);
                 } else if (data.weather[0].icon === '09d' || data.weather[0].icon === '09n') {
                     setWicon(rain);
                 } else if (data.weather[0].icon === '10d' || data.weather[0].icon === '10n') {
@@ -65,7 +66,7 @@ const TopBar = () => {
 
         // Set a new timeout to trigger search after 500 milliseconds (adjust as needed)
         searchTimeout = setTimeout(() => {
-            setCityName(e.target.value);
+          setSearchedCityName(e.target.value);
             fetchData();
         }, 1000);
     }
