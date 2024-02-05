@@ -40,7 +40,7 @@ const TopBar = () => {
                 } else if (data.weather[0].icon === '02d' || data.weather[0].icon === '02n') {
                     setWicon(clouds);
                 } else if (data.weather[0].icon === '03d' || data.weather[0].icon === '04n') {
-                    setWicon(drizzle);
+                    setWicon(clouds);
                 } else if (data.weather[0].icon === '04d' || data.weather[0].icon === '04n') {
                     setWicon(drizzle);
                 } else if (data.weather[0].icon === '09d' || data.weather[0].icon === '09n') {
@@ -49,7 +49,12 @@ const TopBar = () => {
                     setWicon(rain);
                 } else if (data.weather[0].icon === '13d' || data.weather[0].icon === '13n') {
                     setWicon(snow);
-                } else {
+                }
+                else if(data.weather[0].icon === '50d' || data.weather[0].icon === '50n'){
+                    setWicon(mist);
+                }
+                
+                 else {
                     setWicon(clear);
                 }
             })
