@@ -50,9 +50,7 @@ const TopBar = () => {
                 } else if (data.weather[0].icon === '13d' || data.weather[0].icon === '13n') {
                     setWicon(snow);
                 }
-                else if(data.weather[0].icon === '50d' || data.weather[0].icon === '50n'){
-                    setWicon(mist);
-                }
+                
                 
                  else {
                     setWicon(clear);
